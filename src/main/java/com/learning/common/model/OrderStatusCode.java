@@ -1,4 +1,4 @@
-package com.learning.commonlbs.model;
+package com.learning.common.model;
 
 import java.util.Arrays;
 import java.util.Optional;

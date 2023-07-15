@@ -1,14 +1,14 @@
-package com.learning.commonlbs.useractions.create;
+package com.learning.common.useractions.create;
 
-import com.learning.commonlbs.entity.BaseEntity;
-import com.learning.commonlbs.model.OrderStatusCode;
-import com.learning.commonlbs.useractions.ActionRequest;
+import com.learning.common.entity.BaseEntity;
+import com.learning.common.model.OrderStatusCode;
+import com.learning.common.useractions.ActionRequest;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.EnumSet;
 import java.util.List;
 
-import static com.learning.commonlbs.model.OrderStatusCode.*;
+import static com.learning.common.model.OrderStatusCode.*;
 
 @Slf4j
 public abstract class CreateNewService<Request extends ActionRequest,Order extends BaseEntity> {

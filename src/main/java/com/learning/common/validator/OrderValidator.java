@@ -1,4 +1,4 @@
-package com.learning.commonlbs.validator;
+package com.learning.common.validator;
 
 import lombok.extern.slf4j.Slf4j;
 

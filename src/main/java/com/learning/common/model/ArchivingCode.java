@@ -1,4 +1,4 @@
-package com.learning.commonlbs.model;
+package com.learning.common.model;
 
 public enum ArchivingCode {
     NOT_ARCHIVED,

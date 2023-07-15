@@ -1,4 +1,4 @@
-package com.learning.commonlbs.useractions.security;
+package com.learning.common.useractions.security;
 
 public enum CollateralRole {
     VIEWER,

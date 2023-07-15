@@ -1,4 +1,4 @@
-package com.learning.commonlbs.useractions;
+package com.learning.common.useractions;
 
 public enum DecisionAction {
     APPROVE,
