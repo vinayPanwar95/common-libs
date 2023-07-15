@@ -1,17 +1,17 @@
-package com.learning.commonlbs.entity;
+package com.learning.common.entity;
 
-import com.learning.commonlbs.model.ArchivingCode;
-import com.learning.commonlbs.model.OrderStatusCode;
-import com.learning.commonlbs.useractions.security.ContextUser;
+import com.learning.common.model.ArchivingCode;
+import com.learning.common.model.OrderStatusCode;
+import com.learning.common.useractions.security.ContextUser;
+import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
-import javax.persistence.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@MappedSuperclass // this make sure class is not assigned to any table but its mapping and properties can be used by its sub classes
+@MappedSuperclass
+// this make sure class is not assigned to any table but its mapping and properties can be used by its sub classes
 @Data
 @SuperBuilder
 @AllArgsConstructor
@@ -28,17 +28,22 @@ public class BaseEntity {
     @Id
     private UUID id;
 
+    @Version
+    @Column(name="VERSION")
+    private Integer version;
+
     @Column(name= "ORDER_ID")
     private UUID orderId;
+
+    @Column(name= "ORDER_VERSION")
+    private Integer orderVersion;
 
     @Column(name ="STATUS")
     @Enumerated(EnumType.STRING)
     @NonNull
     private OrderStatusCode status;
 
-    @Version
-    @Column(name="VERSION")
-    private Integer version;
+
 
     @Column(name="CREATED_BY")
     private String createdBy;

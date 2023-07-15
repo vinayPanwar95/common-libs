@@ -1,6 +1,6 @@
-package com.learning.commonlbs.useractions;
+package com.learning.common.useractions;
 
-import com.learning.commonlbs.useractions.security.ContextUser;
+import com.learning.common.useractions.security.ContextUser;
 import lombok.Data;
 import lombok.experimental.Accessors;
 import lombok.experimental.SuperBuilder;

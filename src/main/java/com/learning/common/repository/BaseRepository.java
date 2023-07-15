@@ -1,6 +1,6 @@
-package com.learning.commonlbs.repository;
+package com.learning.common.repository;
 
-import com.learning.commonlbs.entity.BaseEntity;
+import com.learning.common.entity.BaseEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 

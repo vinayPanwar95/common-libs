@@ -1,6 +1,7 @@
-package com.learning.commonlbs.datetime;
+package com.learning.common.datetime;
 
 import lombok.NonNull;
+import org.springframework.stereotype.Component;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -8,6 +9,7 @@ import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.temporal.ChronoUnit;
 
+@Component
 public class DateTimerHelper {
     private static final ZoneId ZONE_ID_CET = ZoneId.of("CET");
     private static final ZoneId ZONE_ID_UTC = ZoneId.of("UTC");
